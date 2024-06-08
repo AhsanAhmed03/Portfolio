@@ -107,7 +107,7 @@ figure figcaption {
   position: fixed;
   overflow-y: scroll;
   z-index: 1001;
-  background: #f2f3f7;
+  background: #000000;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -140,6 +140,7 @@ figure figcaption {
   display: block;
   margin-bottom: 2em;
   font-size: 12px;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -155,7 +156,7 @@ figure figcaption {
 #colorlib-aside #colorlib-logo a {
   display: block;
   text-align: center;
-  color: #000;
+  color: #ffffff;
   padding-right: .3em;
 }
 
@@ -191,7 +192,7 @@ figure figcaption {
 }
 
 #colorlib-aside #colorlib-main-menu ul li a {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   position: relative;
   padding: 10px 0;
@@ -224,7 +225,7 @@ figure figcaption {
 
 #colorlib-aside #colorlib-main-menu ul li a:hover {
   text-decoration: none;
-  color: black;
+  color: #2c98f0;
 }
 
 #colorlib-aside #colorlib-main-menu ul li a:hover:after {
@@ -493,7 +494,7 @@ body.offcanvas #colorlib-aside {
   -o-transform: translateX(0);
   transform: translateX(0);
   width: 300px;
-  background: #f2f3f7;
+  background: #000000;
   z-index: 999;
   position: fixed;
 }
