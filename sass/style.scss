@@ -524,14 +524,13 @@ body {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact{
-	padding-top: 4em;
-	padding-bottom: 9em;
+	padding-bottom: 3em;
 	clear: both;
 	width: 100%;
 	display: block;
 	@media screen and(max-width: $screen-sm){
-		padding-top: 5em;
-		padding-bottom: 8em;
+		padding-top: 3em;
+		padding-bottom: 3em;
 	}
 }
 
@@ -548,7 +547,7 @@ body {
 
 .colorlib-heading {
 	font-size: 18px;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 5px;
