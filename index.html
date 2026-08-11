@@ -1,942 +1,517 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Ahsan Ahmed Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahsan Ahmed — Android App Developer (Kotlin, Java, Jetpack Compose)</title>
 
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+<meta name="description" content="Ahsan Ahmed is an Android app developer in Islamabad with 4+ years building and shipping Play Store apps in Kotlin and Java — 4.7M+ combined installs. MVVM, Room, Retrofit, Firebase, Jetpack Compose, AdMob.">
+<meta name="author" content="Ahsan Ahmed">
+<meta name="keywords" content="Android developer, Kotlin developer, Java, Jetpack Compose, MVVM, Room Database, Retrofit, Firebase, AdMob, Play Store, Islamabad, mobile app developer">
+<link rel="canonical" href="https://ahsanahmed03.github.io/Portfolio/">
+<meta name="theme-color" content="#0D0E15" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F6F5FB" media="(prefers-color-scheme: light)">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ahsan Ahmed">
+<meta property="og:title" content="Ahsan Ahmed — Android App Developer">
+<meta property="og:description" content="4+ years shipping Android apps in Kotlin and Java. 4.7M+ combined installs across published Play Store apps.">
+<meta property="og:url" content="https://ahsanahmed03.github.io/Portfolio/">
+<meta property="og:image" content="https://ahsanahmed03.github.io/Portfolio/images/og-cover.png">
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ahsan Ahmed — Android App Developer">
+<meta name="twitter:description" content="4+ years shipping Android apps in Kotlin and Java. 4.7M+ combined installs.">
+<meta name="twitter:image" content="https://ahsanahmed03.github.io/Portfolio/images/og-cover.png">
 
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ahsan Ahmed",
+  "jobTitle": "Android App Developer",
+  "email": "aahsanaahmed26@gmail.com",
+  "url": "https://ahsanahmed03.github.io/Portfolio/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Islamabad", "addressCountry": "PK" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Preston University Islamabad" },
+  "knowsAbout": ["Android", "Kotlin", "Java", "Jetpack Compose", "MVVM", "Room Database", "Retrofit", "Firebase", "AdMob"],
+  "sameAs": [
+    "https://www.linkedin.com/in/ahsan-ahmed-39544b246/",
+    "https://github.com/ahsanahmed03",
+    "https://dev.to/ahsanahmed03",
+    "https://medium.com/@aahsanaahmed26"
+  ]
+}
+</script>
 </head>
 
 <body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-				aria-expanded="false" aria-controls="navbar"><i></i></a>
-			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-				<div class="text-center">
-					<div class="author-img" style="background-image: url(images/profile_pic.jpeg);"></div>
-					<h1 id="colorlib-logo"><a href="index.html">Ahsan Ahmed</a></h1>
-					<span class="position">Android App Developer</span>
-				</div>
-				<nav id="colorlib-main-menu" role="navigation" class="navbar">
-					<div id="navbar" class="collapse">
-						<ul>
-							<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-							<li><a href="#" data-nav-section="about">About</a></li>
-							<li><a href="#" data-nav-section="skills">Skills</a></li>
-							<li><a href="#" data-nav-section="education">Education</a></li>
-							<li><a href="#" data-nav-section="experience">Experience</a></li>
-							<li><a href="#" data-nav-section="work">Work</a></li>
-							<li><a href="#" data-nav-section="blog">Blogs</a></li>
-							<li><a href="#" data-nav-section="contact">Contact</a></li>
-						</ul>
-					</div>
-				</nav>
-
-				<div class="colorlib-footer">
-
-					<ul>
-						<li><a href="https://www.facebook.com/profile.php?id=100083917520174"><i
-									class="icon-facebook2"></i></a></li>
-
-						<li><a href="https://www.instagram.com/ahsanahmed_03/"><i class="icon-instagram"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/ahsan-ahmed-39544b246/"><i
-									class="icon-linkedin2"></i></a></li>
-					</ul>
-				</div>
-
-			</aside>
-
-			<div id="colorlib-main">
-				<section id="colorlib-hero" class="js-fullheight" data-section="home">
-					<div class="flexslider js-fullheight">
-						<ul class="slides">
-							<li style="background-image: url(images/img_bg_1.png);">
-								<div class="container-fluid">
-									<div class="row">
-										<div
-											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner js-fullheight">
-												<div class="desc">
-													<h1>Hi! <br>I'm Ahsan Ahmed</h1>
-													<h2>Android App Developer</h2>
-													<p><a class="btn btn-primary btn-learn"
-															href="resume/ahsanahmedresume.pdf"
-															download="ahsanahmedresume" target="_blank">Download Resume
-															<i class="icon-download4"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<div class="overlay"></div>
-							<div class="container-fluid">
-								<div class="row">
-									<div
-										class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-										<div class="slider-text-inner">
-											<div class="desc">
-												<h1>I am <br>an Android App Developer</h1>
-												<p><a class="btn btn-primary btn-learn"
-														href="resume/ahsanahmedresume.pdf" download="ahsanahmedresume"
-														target="_blank">View Portfolio <i
-															class="icon-briefcase3"></i></a></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section class="colorlib-about" data-section="about">
-					<div class="colorlib-narrow-content">
-
-						<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-							<div class="col-md-12">
-								<div class="about-desc">
-									<span class="heading-meta">About</span>
-									<h2 class="colorlib-heading">Who Am I?</h2>
-									<p><strong>Hi I'm Ahsan Ahmed</strong> Android App Developer with hands-on
-										experience in Java and Kotlin, passionate
-										about building user-friendly, high-performance mobile applications. Proficient
-										in
-										Firebase, third-party SDK integrations, and AdMob for effective app
-										monetization. I
-										have published and maintained multiple apps on the Play Store and am currently
-										expanding my skills with Jetpack Compose to stay aligned with modern Android
-										development practices. Committed to writing clean, maintainable code and
-										delivering reliable, scalable solutions
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-
-					</div>
-				</section>
-
-				<section class="colorlib-services" data-section="skills">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">What I do?</span>
-								<h2 class="colorlib-heading">Here are some of my expertise</h2>
-							</div>
-						</div>
-						<div class="row row-pt-md">
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-1">
-									<span class="icon">
-										<i class="fab fa-android"></i> </span>
-									<div class="desc">
-										<h3>Android App Development</h3>
-										<p>Developed and maintained responsive Android applications from scratch and
-											enhanced existing ones.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-2">
-									<span class="icon">
-										<i class="icon-data"></i>
-									</span>
-									<div class="desc">
-										<h3>Room DB & MVVM</h3>
-										<p>Designed apps following MVVM architecture and integrated Room Database for
-											efficient local data storage.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-3">
-									<span class="icon">
-										<i class="icon-phone3"></i>
-									</span>
-									<div class="desc">
-										<h3>Performance Optimization</h3>
-										<p>Improved app speed and responsiveness through code optimization and efficient
-											architecture.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-4">
-									<span class="icon">
-										<i class="icon-layers2"></i>
-									</span>
-									<div class="desc">
-										<h3>Ads Network Intregation</h3>
-										<p>Implemented Ads Networks with optimized placement to maximize revenue while
-											maintaining user experience</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-5">
-									<span class="icon">
-										<i class="icon-data"></i>
-									</span>
-									<div class="desc">
-										<h3>API Intregation</h3>
-										<p>Hands-on experience in Retrofit and REST API integration to ensure robust
-											data communication</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 text-center animate-box">
-								<div class="services color-6">
-									<span class="icon">
-										<i class="icon-phone3"></i>
-									</span>
-									<div class="desc">
-										<h3>Play Store</h3>
-										<p>Managed live apps on the Google Play Store, including updates, user review
-											monitoring, and addressing feedback.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="colorlib-education" data-section="education">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Education</span>
-								<h2 class="colorlib-heading animate-box">Education</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="fancy-collapse-panel">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion"
-														href="#collapseOne" aria-expanded="true"
-														aria-controls="collapseOne">Bachelor Degree Computer Science
-													</a>
-												</h4>
-											</div>
-											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-												aria-labelledby="headingOne">
-												<div class="panel-body">
-													<div class="row">
-														<div class="col-md-6">
-															<h3>Preston Universty Islamabad</h3>
-															<p>Oct 2020 - Sept 2024</p>
-														</div>
-
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="colorlib-experience" data-section="experience">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Experience</span>
-								<h2 class="colorlib-heading animate-box">Work Experience</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="timeline-centered">
-
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-3">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">3TechSoft</a> <span>Oct 2025 - Continue</span></h2>
-												<h4>Android App Developer</h4>
-												<ul>
-													<li>Developed and maintained Android applications using Kotlin, ensuring high performance, stability, and reliability.</li>
-													
-													<li>Integrated AI-based features to enhance application functionality and improve overall user experience.</li>
-													
-													<li>Implemented monetization strategies using AdMob, Unity Ads, and AppLovin while maintaining a smooth and user-friendly experience.</li>
-													
-													<li>Built reusable and scalable components (adapters, base classes, utilities) to reduce code duplication and accelerate development.</li>
-													
-													<li>Enhanced and maintained Islamic applications (Quran, Tasbeeh, and prayer apps) by introducing new features and resolving bugs.</li>
-													
-													<li>Improved multilingual voice keyboard applications (Urdu, Arabic, Amharic) with performance optimizations, feature enhancements, and bug fixes.</li>
-													
-													<li>Strengthened app stability by proactively identifying and resolving crashes using Crashlytics and log analysis.</li>
-												</ul>
-											</div>
-										</div>
-									</article>
-
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-2">
-												<i class="icon-pen2"></i>
-											</div>
-											<div class="timeline-label">
-												<h2><a href="#">Funprime Technologies</a> <span>September 2023 -
-														July 2025</span></h2>
-												<h4>Android App Developer</h4>
-												<ul>
-													<li>Implemented Firebase features like Remote Config, Crashlytics,
-														and In-App Messaging.</li>
-													<li>Designed apps following the MVVM architecture pattern and
-														utilized Room Database.</li>
-													<li>Developed responsive apps from scratch and updated existing
-														ones.</li>
-													<li>Integrated AdMob Ads for monetization purposes.</li>
-													<li>Proficient in developing Android applications using Java and
-														Kotlin, with hands-on experience in Retrofit and REST API
-														integration to ensure robust data communication.</li>
-													<li>Knowledgeable in implementing Android architecture patterns,
-														including Model-ViewController (MVC), Model-View-Presenter
-														(MVP), and Model-View-ViewModel (MVVM), optimizing app structure
-														and maintainability.</li>
-													<li>Knowledge of Material Design guidelines and ability to create
-														visually appealing UI/UX designs.</li>
-													<li>Developed and maintained responsive Android applications from
-														scratch and enhanced existing ones.</li>
-													<li>Designed apps following MVVM architecture and integrated Room
-														Database for efficient local data storage</li>
-													<li>Implemented Firebase features such as <strong> Remote Config,
-															Crashlytics,
-														</strong> and <strong>Cloud-Messaging</strong> to enhance user
-														engagement and app stability.</li>
-													<li>Utilized AdMob Ads to implement monetization strategies with
-														minimal
-														user disruption</li>
-													<li>Proficiently used Java and Kotlin, with hands-on experience in
-														integrating Retrofit and consuming REST APIs.</li>
-													<li>Applied architectural patterns like MVC, MVP, and MVVM to ensure
-														scalable and maintainable codebases</li>
-													<li>Followed Material Design guidelines to create modern, intuitive,
-														responsive and
-														visually appealing UI/UX.</li>
-												</ul>
-											</div>
-										</div>
-									</article>
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
-
-											<div class="timeline-icon color-1">
-												<i class="icon-pen2"></i>
-											</div>
-
-											<div class="timeline-label">
-												<h2><a href="#">Compulogic Standard Solutions</a> <span>May 2022 –
-														September 2023
-													</span></h2>
-												<h4>Android App Developer</h4>
-												<ul>
-													<li>Development of android app in java & kotlin</li>
-													<li>Convert concept to original app</li>
-													<li>Developed Android applications using Java and Kotlin</li>
-													<li>Transformed concepts into functional applications </li>
-													<li>Proficient in Android app development using Java</li>
-													<li>Implementation of 3rd party libraries</li>
-													<li>Experience working with Firebase and SQLite for data storage and
-														management in Android
-														apps.</li>
-													<li>Skilled in managing live apps on the Google Play Store,
-														including app updates, monitoring
-														user reviews, and addressing user feedback to enhance app
-														quality and user satisfaction.</li>
-													<li>Proficient in integrating ad networks such as AdMob and AppLovin
-														to monetize applications
-														effectively while maintaining a positive user experience.</li>
-													<li>Implemented third-party libraries effectively </li>
-													<li>Managed live apps on the Google Play Store, including updates,
-														user
-														review monitoring, and addressing feedback to improve app
-														quality and
-														user satisfaction</li>
-													<li>Integrated ad networks like AdMob and AppLovin to
-														monetizeeffectively while maintaining a positive user
-														experience.</li>
-													<li>Utilized Firebase and SQLite for data storage and management in
-														Android applications.</li>
-
-												</ul>
-											</div>
-										</div>
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="colorlib-experience" data-section="work">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">My Work</span>
-								<h2 class="colorlib-heading animate-box">Recent Work</h2>
-							</div>
-						</div>
-						<div class="row">
-
-							<a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-								target="_blank">
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Fingerprint Live Animation Wallpaper</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Customize your
-													lock screen with live and animated wallpapers. Enjoy
-													smooth transitions, stylish effects, and unique designs that make
-													your
-													phone stand out every time you unlock it.</span>
-												<p class="icon" style="color: rgb(47, 47, 47)"><span><i
-															class="icon-download4"></i> 50K+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</a>
-
-
-
-							<a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-								target="_blank">
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Battery Charging Animation</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Make charging fun
-													with cool charging animations, sounds, and
-													effects.
-													Track battery status in style and give your phone a fresh, modern
-													look
-													while plugged in.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 100K+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-
-							</a>
-
-
-
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-
-								<a href="https://play.google.com/store/apps/details?id=com.pdf.viewer.and.editor"
-									target="_blank">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>PDF Viewer & Image to PDF Converter</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Open and read PDF
-													documents easily, anytime. Convert photos,
-													screenshots, and other images into professional PDF files with high
-													quality. Share, manage, and access all your PDFs in one
-													place.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 1M+</span></p>
-											</div>
-										</article>
-									</div>
-
-								</a>
-
-							</div>
-
-							<a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-								target="_blank">
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Video Downloader & Locker</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Download videos
-													securely from multiple platforms in HD quality.
-													Keep
-													your private videos safe in a password-protected locker for extra
-													security.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 500K+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</a>
-
-							<a href="https://play.google.com/store/apps/details?id=com.video.audio.remover"
-								target="_blank">
-
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Mute Video (Remove Audio from Video)</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Instantly remove
-													background noise, unwanted music, or
-													conversations
-													from any video. Perfect for creating clean, silent clips for editing
-													or
-													sharing.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 200K+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-
-							</a>
-
-							<a href="https://play.google.com/store/apps/details?id=com.video.to.audio.converter.pro.mp4.to.mp3"
-								target="_blank">
-
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Video to Audio Converter</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Convert videos
-													into MP3, AAC, or other audio formats. Extract
-													soundtracks, songs, or dialogues from your favorite clips with fast
-													and
-													high-quality conversion.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 1M+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</a>
-
-							<a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-								target="_blank">
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Photo Editor & Quotes Maker</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Enhance your
-													photos with filters, stickers, frames, and effects.
-													Create motivational or stylish quotes with customizable fonts,
-													backgrounds, and layouts for social media sharing.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 500K+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-
-							</a>
-
-
-							<a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-								target="_blank">
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>AI Photo Maker (Face Swap, Text to Image, AI Headshots)</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Create amazing
-													AI-generated images in seconds. Swap faces,
-													generate
-													professional headshots, or turn your ideas into art using
-													text-to-image
-													AI.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 100K+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</a>
-
-
-							<a href="https://play.google.com/store/apps/details?id=com.pranksounds.airhornpranksound.policesiren.fartpranksound"
-								target="_blank">
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Funny Sounds Horn</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Trick friends
-													with realistic prank sounds. Fun and entertaining tool to surprise people in different
-													situations.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 50K+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-
-							</a>
-
-							<a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-								target="_blank">
-
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Speech to Text & Text to Speech Converter</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Convert voice
-													recordings into accurate text or transform written
-													text
-													into natural, human-like speech. Great for notes, accessibility, and
-													productivity.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 500K+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-
-							</a>
-
-
-							<a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-								target="_blank">
-
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Flash Alerts on Call Incoming</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Never miss an
-													important call with LED flash alerts. Your phone’s
-													flashlight will blink whenever you receive calls or notifications,
-													even
-													in silent mode.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 10k+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</a>
-
-
-							<a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-								target="_blank">
-
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Business Card Maker</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Design
-													professional business cards with customizable templates,
-													fonts,
-													colors, and logos. Save and share your digital card instantly with
-													clients and colleagues.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 100K+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</a>
-
-
-							<a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-								target="_blank">
-
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="projects_box_bg">
-
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Digital Compass & Weather App</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">Navigate easily
-													with a smart compass and stay updated with
-													real-time
-													weather reports, forecasts, and temperature tracking for your
-													location.</span>
-												<p class="icon" style="color: rgb(47, 47, 47);"><span><i
-															class="icon-download4"></i> 250K+</span></p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</a>
-
-							<a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-								target="_blank">
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="projects_box_bg">
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Prank Call (Fake Celebrities Call)</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">
-													Surprise your friends with fake celebrity calls. Choose a famous
-													name, schedule the call, and make it look like you’re getting a real
-													call from your favorite star. Perfect for pranks and fun moments.
-												</span>
-												<p class="icon" style="color: rgb(47, 47, 47);">
-													<span><i class="icon-download4"></i> 100K+</span>
-												</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</a>
-
-							<a href="https://play.google.com/store/apps/details?id=com.smart.multi.tool.app" target="_blank">
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="projects_box_bg">
-										<article data-animate-effect="fadeInRight">
-											<div class="project-content">
-												<h3>Smart Multi Tools App</h3>
-												<span style="color: rgb(47, 47, 47); font-size: 13px;">
-													A powerful all-in-one utility app packed with everyday tools in one
-													place.
-													It includes features like Flashlight Tools, Digital Compass, Image
-													to PDF Converter,
-													PDF Viewer, and Speech Notes — making it a must-have app for daily
-													use.
-												</span>
-												<p class="icon" style="color: rgb(47, 47, 47);">
-													<span><i class="icon-download4"></i> 250K+</span>
-												</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</a>
-
-
-						</div>
-
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<p><a href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link"
-										target="_blank" class="btn btn-primary btn-lg btn-load-more">Load more <i
-											class="icon-reload"></i></a></p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-				<section class="colorlib-blog" data-section="blog">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Read</span>
-								<h2 class="colorlib-heading">Recent Blog</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://dev.to/ahsanahmed03/bottom-navigation-view-with-nav-component-in-android-using-kotlin-step-by-step-tutorial-1kp4"
-										, target="_blank" class="blog-img"><img src="images/blog-1.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<span> Android Tutorials </small> | <small> <i class="icon-eye"></i>
-												199</small></span>
-										<h3><a href="https://dev.to/ahsanahmed03/bottom-navigation-view-with-nav-component-in-android-using-kotlin-step-by-step-tutorial-1kp4"
-												, target="_blank">Bottom Navigation View with Nav Component in Android
-												using Kotlin</a></h3>
-										<p>How to seamlessly integrate and use a Bottom Navigation View with a
-											Navigation Graph in Android using Kotlin</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="https://medium.com/@aahsanaahmed26/detecting-incoming-calls-and-displaying-phone-number-in-android-studio-using-java-step-by-step-41a425417654?source=post_stats_page-------------------------------------"
-										, target="_blank" , class="blog-img"><img src="images/blog-2.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<span><small> Android Tutorials </small> | <small> <i class="icon-eye"></i>
-												1.98K</small></span>
-										<h3><a href="https://medium.com/@aahsanaahmed26/detecting-incoming-calls-and-displaying-phone-number-in-android-studio-using-java-step-by-step-41a425417654?source=post_stats_page-------------------------------------"
-												target="_blank">Detecting Incoming Calls and Displaying Phone Number in
-												Android Studio</a></h3>
-										<p> How to detect incoming calls and display the phone number</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://medium.com/p/3695eb8446a9?source=post_stats_page-------------------------------------"
-										target="_blank" class="blog-img"><img src="images/blog-3.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<span><small> Android Tutorials </small> | <small> <i class="icon-eye"></i>
-												1.1K</small></span>
-										<h3><a href="https://medium.com/p/3695eb8446a9?source=post_stats_page-------------------------------------"
-												target="_blank">Creating a QR Code and Barcode Scanner App in Android
-												Studio</a></h3>
-										<p>How to build a QR code and Barcode scanner app in Android Studio using Java.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<p><a href="https://dev.to/ahsanahmed03" target="_blank"
-										class="btn btn-primary btn-lg btn-load-more">Load more <i
-											class="icon-reload"></i></a></p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="colorlib-contact" data-section="contact">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Get in Touch</span>
-								<h2 class="colorlib-heading">Contact</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-5">
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-briefcase3"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="https://mailto:aahsanaahmed26@gmail.com"
-												target="_blank">aahsanaahmed26@gmail.com</a></p>
-									</div>
-								</div>
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-facebook2"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="https://www.facebook.com/profile.php?id=100083917520174"
-												target="_blank">Facebook</a></p>
-									</div>
-								</div>
-
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-instagram"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="https://www.instagram.com/ahsanahmed_03/"
-												target="_blank">Instagram</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-			</div><!-- end:colorlib-main -->
-		</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-
-
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- icon set -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zm0 0v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="12" height="12" rx="3"/><path d="M15 11l5-3v8l-5-3z"/></symbol>
+    <symbol id="i-audio" viewBox="0 0 24 24"><path d="M12 4v11a3 3 0 1 1-2-2.8V4z"/><path d="M12 4l6 2"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 16l4.5-4.5 4 4L15 12l6 5"/><circle cx="9" cy="10" r="1.4"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M18.5 15.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M6 9.5h4.5V3l7.5 11.5h-4.5V21z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="3"/><path d="M6 15h5M6 12h8"/><circle cx="17" cy="11" r="2"/></symbol>
+    <symbol id="i-flash" viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="18" rx="2.5"/><path d="M4 8v2M20 8v2M2.5 12h1.8M19.7 12h1.8"/></symbol>
+    <symbol id="i-tools" viewBox="0 0 24 24"><path d="M14.5 3.5a4.5 4.5 0 0 0 5.6 5.8L21 10 10 21l-3.5-3.5L17.5 6.5z"/><path d="M6 3l2.5 2.5M3.5 5.5L6 8"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol>
+  </defs>
+</svg>
+
+<header class="bar" id="bar">
+  <div class="wrap bar-in">
+    <a class="mark" href="#home">
+      <span class="mark-tile">AA</span>
+      <span class="mark-txt"><b>Ahsan Ahmed</b><i>Android Developer</i></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#apps">Apps</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="bar-act">
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch to light theme">
+        <svg viewBox="0 0 24 24" class="ico-moon" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+        <svg viewBox="0 0 24 24" class="ico-sun" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+      </button>
+      <button class="icon-btn menu" id="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ─────────── HERO ─────────── -->
+<section class="hero" id="home">
+  <div class="grid8" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <p class="eyebrow reveal">Android Developer · Islamabad, PK · Open to work</p>
+
+    <h1 class="reveal">
+      I build Android apps<br>
+      people <em>keep</em> installed.
+    </h1>
+
+    <p class="lede reveal">Four years in Kotlin and Java, shipping to the Play Store — utility, media and personalization apps that survive real users, real reviews and real crash reports.</p>
+
+    <div class="meter reveal">
+      <div class="meter-num">
+        <span class="odo" data-to="4710000" data-suffix="+">4,710,000+</span>
+      </div>
+      <p class="meter-cap">Combined installs across the apps listed below</p>
+      <ul class="meter-sub">
+        <li><b>15</b><span>apps shipped</span></li>
+        <li><b>4</b><span>years in production</span></li>
+        <li><b>3</b><span>ad networks integrated</span></li>
+      </ul>
+    </div>
+
+    <div class="cta reveal">
+      <a class="btn btn-fill" href="resume/ahsanahmedresume.pdf" download>Download resume</a>
+      <a class="btn btn-line" href="#apps">See the apps <svg class="tick" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <ul class="stack reveal">
+      <li>Kotlin</li><li>Java</li><li>Jetpack Compose</li><li>MVVM</li><li>Room</li><li>Retrofit</li><li>Firebase</li><li>AdMob</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────── ABOUT ─────────── -->
+<section class="sec" id="about">
+  <div class="wrap two">
+    <div class="two-side">
+      <p class="tag">01 — About</p>
+      <h2>Who am I?</h2>
+    </div>
+    <div class="two-main">
+      <p class="big">I'm an Android developer who ships. Not prototypes — apps that live on the Play Store, take real traffic, and get updated when users complain.</p>
+      <p>I work in Kotlin and Java, structure apps around MVVM, and use Room for local storage and Retrofit for everything over the wire. Firebase handles the rest: Remote Config for shipping changes without a release, Crashlytics for finding what broke, Cloud Messaging and In-App Messaging for bringing people back.</p>
+      <p>Monetization is part of the job, so I've integrated AdMob, AppLovin and Unity Ads — placed carefully enough to earn without driving people to uninstall. Lately I've been moving my UI work over to Jetpack Compose.</p>
+
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>Islamabad, Pakistan</dd></div>
+        <div><dt>Experience</dt><dd>4+ years, since May 2022</dd></div>
+        <div><dt>Education</dt><dd>BS Computer Science — Preston University Islamabad, 2024</dd></div>
+        <div><dt>Currently</dt><dd>Android Developer at 3TechSoft</dd></div>
+        <div><dt>Languages</dt><dd>English, Urdu</dd></div>
+        <div><dt>Availability</dt><dd>Full-time, contract, remote</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── SKILLS ─────────── -->
+<section class="sec" id="skills">
+  <div class="wrap">
+    <div class="head">
+      <p class="tag">02 — What I do</p>
+      <h2>Where I'm useful</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card"><span class="ci"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <h3>Android app development</h3>
+        <p>Building responsive apps from an empty project and taking over existing codebases without breaking them. Kotlin first, Java where the codebase asks for it.</p></article>
+
+      <article class="card"><span class="ci"><svg aria-hidden="true"><use href="#i-doc"/></svg></span>
+        <h3>MVVM &amp; Room</h3>
+        <p>Apps structured so features can be added without rewriting screens. Room for local persistence, plus MVC and MVP on legacy projects that already use them.</p></article>
+
+      <article class="card"><span class="ci"><svg aria-hidden="true"><use href="#i-bolt"/></svg></span>
+        <h3>Performance &amp; stability</h3>
+        <p>Faster cold starts, smoother lists, fewer ANRs. I chase crashes through Crashlytics and log analysis until the rate actually drops.</p></article>
+
+      <article class="card"><span class="ci"><svg aria-hidden="true"><use href="#i-spark"/></svg></span>
+        <h3>Ad network integration</h3>
+        <p>AdMob, AppLovin and Unity Ads, with placement tuned for revenue that doesn't cost retention. Waterfalls, formats, frequency capping.</p></article>
+
+      <article class="card"><span class="ci"><svg aria-hidden="true"><use href="#i-tools"/></svg></span>
+        <h3>REST API integration</h3>
+        <p>Retrofit and OkHttp, coroutines and Flow, sensible error and offline states so a dropped connection isn't a blank screen.</p></article>
+
+      <article class="card"><span class="ci"><svg aria-hidden="true"><use href="#i-lock"/></svg></span>
+        <h3>Play Console ownership</h3>
+        <p>Releases, staged rollouts, policy compliance, review monitoring and the follow-up fixes. I own apps after launch, not just up to it.</p></article>
+    </div>
+
+    <div class="chips-block">
+      <p class="tag small">Toolbox</p>
+      <ul class="chips">
+        <li>Kotlin</li><li>Java</li><li>Jetpack Compose</li><li>XML layouts</li><li>Coroutines</li><li>Flow</li>
+        <li>MVVM</li><li>MVP</li><li>MVC</li><li>Room</li><li>SQLite</li><li>Retrofit</li><li>OkHttp</li><li>REST</li>
+        <li>Navigation Component</li><li>WorkManager</li><li>Material Design 3</li>
+        <li>Firebase Remote Config</li><li>Crashlytics</li><li>Cloud Messaging</li><li>In-App Messaging</li>
+        <li>AdMob</li><li>AppLovin</li><li>Unity Ads</li><li>Play Console</li><li>Git</li><li>Gradle</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── EXPERIENCE ─────────── -->
+<section class="sec" id="experience">
+  <div class="wrap">
+    <div class="head">
+      <p class="tag">03 — Experience</p>
+      <h2>Where I've worked</h2>
+    </div>
+
+    <ol class="tl">
+      <li class="tl-item">
+        <div class="tl-when"><span class="dot" aria-hidden="true"></span><time>Oct 2025 — Present</time></div>
+        <div class="tl-body">
+          <h3>Android App Developer</h3>
+          <p class="tl-org">3TechSoft</p>
+          <ul>
+            <li>Build and maintain Kotlin applications with performance, stability and reliability as the release bar.</li>
+            <li>Integrate AI-based features into existing products to extend what the apps can do.</li>
+            <li>Run monetization across AdMob, Unity Ads and AppLovin without degrading the experience.</li>
+            <li>Write reusable adapters, base classes and utilities that cut duplication and speed up new features.</li>
+            <li>Extend Islamic apps — Quran, Tasbeeh and prayer times — with new features and bug fixes.</li>
+            <li>Improve multilingual voice keyboards for Urdu, Arabic and Amharic.</li>
+            <li>Track down crashes proactively through Crashlytics and log analysis.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-when"><span class="dot" aria-hidden="true"></span><time>Sep 2023 — Jul 2025</time></div>
+        <div class="tl-body">
+          <h3>Android App Developer</h3>
+          <p class="tl-org">Funprime Technologies</p>
+          <ul>
+            <li>Developed apps from scratch and modernized existing ones on MVVM with Room for local data.</li>
+            <li>Shipped Firebase Remote Config, Crashlytics, Cloud Messaging and In-App Messaging for engagement and stability.</li>
+            <li>Integrated Retrofit and REST APIs with reliable data handling across network conditions.</li>
+            <li>Applied MVC, MVP and MVVM as each codebase required, keeping structure maintainable.</li>
+            <li>Implemented AdMob monetization tuned for minimal user disruption.</li>
+            <li>Followed Material Design guidelines for responsive, modern UI.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-when"><span class="dot" aria-hidden="true"></span><time>May 2022 — Sep 2023</time></div>
+        <div class="tl-body">
+          <h3>Android App Developer</h3>
+          <p class="tl-org">Compulogic Standard Solutions</p>
+          <ul>
+            <li>Turned concepts and designs into working Android applications in Java and Kotlin.</li>
+            <li>Used Firebase and SQLite for data storage and management.</li>
+            <li>Integrated third-party libraries and SDKs across multiple products.</li>
+            <li>Managed live Play Store apps: updates, review monitoring and acting on user feedback.</li>
+            <li>Integrated AdMob and AppLovin for monetization.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-when"><span class="dot" aria-hidden="true"></span><time>Oct 2020 — Sep 2024</time></div>
+        <div class="tl-body">
+          <h3>BS Computer Science</h3>
+          <p class="tl-org">Preston University Islamabad</p>
+          <ul><li>Bachelor's degree completed alongside full-time Android work from 2022 onward.</li></ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ─────────── APPS ─────────── -->
+<section class="sec" id="apps">
+  <div class="wrap">
+    <div class="head head-row">
+      <div>
+        <p class="tag">04 — Work</p>
+        <h2>Apps I've shipped</h2>
+      </div>
+      <p class="head-note">15 apps · 4.7M+ combined installs</p>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter apps">
+      <button class="chip-btn is-on" data-f="all" type="button">All</button>
+      <button class="chip-btn" data-f="play" type="button">Live on Play</button>
+      <button class="chip-btn" data-f="tools" type="button">Tools</button>
+      <button class="chip-btn" data-f="media" type="button">Media</button>
+      <button class="chip-btn" data-f="personalization" type="button">Personalization</button>
+      <button class="chip-btn" data-f="fun" type="button">AI &amp; Fun</button>
+    </div>
+
+    <div class="apps" id="appgrid">
+
+      <article class="app" data-cat="tools" data-play="yes">
+        <span class="app-ic" style="--h:264"><img src="images/apps/pdf-viewer.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-doc"/></svg></span>
+        <div class="app-txt">
+          <h3>PDF Viewer &amp; Image to PDF</h3>
+          <p>Read PDFs, convert photos and screenshots into clean PDF files, and keep everything in one place.</p>
+        </div>
+        <div class="app-foot"><span class="pill">1M+ installs</span><a class="app-link" href="https://play.google.com/store/apps/details?id=com.pdf.viewer.and.editor" target="_blank" rel="noopener">Google Play <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="media" data-play="yes">
+        <span class="app-ic" style="--h:200"><img src="images/apps/video-to-audio.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-audio"/></svg></span>
+        <div class="app-txt">
+          <h3>Video to Audio Converter</h3>
+          <p>Pull MP3, AAC and other audio out of any video — soundtracks, songs, dialogue — quickly and at full quality.</p>
+        </div>
+        <div class="app-foot"><span class="pill">1M+ installs</span><a class="app-link" href="https://play.google.com/store/apps/details?id=com.video.to.audio.converter.pro.mp4.to.mp3" target="_blank" rel="noopener">Google Play <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="media" data-play="no">
+        <span class="app-ic" style="--h:20"><img src="images/apps/video-downloader.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-lock"/></svg></span>
+        <div class="app-txt">
+          <h3>Video Downloader &amp; Locker</h3>
+          <p>Download videos in HD from multiple platforms and keep private ones behind a password-protected locker.</p>
+        </div>
+        <div class="app-foot"><span class="pill">500K+ installs</span><a class="app-link" href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link" target="_blank" rel="noopener">Screenshots <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="media" data-play="no">
+        <span class="app-ic" style="--h:330"><img src="images/apps/photo-editor.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-image"/></svg></span>
+        <div class="app-txt">
+          <h3>Photo Editor &amp; Quotes Maker</h3>
+          <p>Filters, stickers, frames and effects, plus a quote builder with custom fonts and layouts for social posts.</p>
+        </div>
+        <div class="app-foot"><span class="pill">500K+ installs</span><a class="app-link" href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link" target="_blank" rel="noopener">Screenshots <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="tools" data-play="no">
+        <span class="app-ic" style="--h:160"><img src="images/apps/speech-text.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-audio"/></svg></span>
+        <div class="app-txt">
+          <h3>Speech to Text &amp; Text to Speech</h3>
+          <p>Turn speech into accurate text and text into natural speech — built for notes, accessibility and productivity.</p>
+        </div>
+        <div class="app-foot"><span class="pill">500K+ installs</span><a class="app-link" href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link" target="_blank" rel="noopener">Screenshots <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="tools" data-play="yes">
+        <span class="app-ic" style="--h:284"><img src="images/apps/multi-tools.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-tools"/></svg></span>
+        <div class="app-txt">
+          <h3>Smart Multi Tools</h3>
+          <p>One utility app holding the everyday set: flashlight tools, compass, image to PDF, PDF viewer and speech notes.</p>
+        </div>
+        <div class="app-foot"><span class="pill">250K+ installs</span><a class="app-link" href="https://play.google.com/store/apps/details?id=com.smart.multi.tool.app" target="_blank" rel="noopener">Google Play <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="tools" data-play="no">
+        <span class="app-ic" style="--h:140"><img src="images/apps/compass-weather.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-compass"/></svg></span>
+        <div class="app-txt">
+          <h3>Digital Compass &amp; Weather</h3>
+          <p>A sensor-backed compass paired with live weather, forecasts and temperature tracking for your location.</p>
+        </div>
+        <div class="app-foot"><span class="pill">250K+ installs</span><a class="app-link" href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link" target="_blank" rel="noopener">Screenshots <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="media" data-play="yes">
+        <span class="app-ic" style="--h:350"><img src="images/apps/mute-video.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-video"/></svg></span>
+        <div class="app-txt">
+          <h3>Mute Video</h3>
+          <p>Strip background noise, music or conversation out of any clip for clean, silent footage ready to edit.</p>
+        </div>
+        <div class="app-foot"><span class="pill">200K+ installs</span><a class="app-link" href="https://play.google.com/store/apps/details?id=com.video.audio.remover" target="_blank" rel="noopener">Google Play <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="personalization" data-play="no">
+        <span class="app-ic" style="--h:100"><img src="images/apps/battery-animation.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-bolt"/></svg></span>
+        <div class="app-txt">
+          <h3>Battery Charging Animation</h3>
+          <p>Charging animations, sounds and effects, with battery status tracking that looks like part of the system.</p>
+        </div>
+        <div class="app-foot"><span class="pill">100K+ installs</span><a class="app-link" href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link" target="_blank" rel="noopener">Screenshots <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="fun" data-play="no">
+        <span class="app-ic" style="--h:310"><img src="images/apps/ai-photo.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-spark"/></svg></span>
+        <div class="app-txt">
+          <h3>AI Photo Maker</h3>
+          <p>Face swap, AI headshots and text-to-image generation, wrapped in a flow that finishes in a few taps.</p>
+        </div>
+        <div class="app-foot"><span class="pill">100K+ installs</span><a class="app-link" href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link" target="_blank" rel="noopener">Screenshots <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="tools" data-play="no">
+        <span class="app-ic" style="--h:230"><img src="images/apps/business-card.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-card"/></svg></span>
+        <div class="app-txt">
+          <h3>Business Card Maker</h3>
+          <p>Templates, fonts, colours and logo placement for professional cards you can save and share as a digital card.</p>
+        </div>
+        <div class="app-foot"><span class="pill">100K+ installs</span><a class="app-link" href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link" target="_blank" rel="noopener">Screenshots <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="fun" data-play="no">
+        <span class="app-ic" style="--h:0"><img src="images/apps/prank-call.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <div class="app-txt">
+          <h3>Prank Call</h3>
+          <p>Schedule a convincing fake celebrity call, complete with incoming-call screen and audio, for a set-up that lands.</p>
+        </div>
+        <div class="app-foot"><span class="pill">100K+ installs</span><a class="app-link" href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link" target="_blank" rel="noopener">Screenshots <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="personalization" data-play="no">
+        <span class="app-ic" style="--h:290"><img src="images/apps/fingerprint-wallpaper.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-image"/></svg></span>
+        <div class="app-txt">
+          <h3>Fingerprint Live Wallpaper</h3>
+          <p>Animated lock screens with smooth unlock transitions and effects that hold up at 60fps on mid-range devices.</p>
+        </div>
+        <div class="app-foot"><span class="pill">50K+ installs</span><a class="app-link" href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link" target="_blank" rel="noopener">Screenshots <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="fun" data-play="yes">
+        <span class="app-ic" style="--h:40"><img src="images/apps/funny-sounds.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-audio"/></svg></span>
+        <div class="app-txt">
+          <h3>Funny Sounds Horn</h3>
+          <p>A soundboard of realistic prank effects — air horn, siren and more — built for instant playback.</p>
+        </div>
+        <div class="app-foot"><span class="pill">50K+ installs</span><a class="app-link" href="https://play.google.com/store/apps/details?id=com.pranksounds.airhornpranksound.policesiren.fartpranksound" target="_blank" rel="noopener">Google Play <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+      <article class="app" data-cat="personalization" data-play="no">
+        <span class="app-ic" style="--h:55"><img src="images/apps/flash-alerts.png" alt="" loading="lazy" onerror="this.remove()"><svg aria-hidden="true"><use href="#i-flash"/></svg></span>
+        <div class="app-txt">
+          <h3>Flash Alerts on Call</h3>
+          <p>LED flash alerts for incoming calls and notifications, so nothing gets missed even on silent.</p>
+        </div>
+        <div class="app-foot"><span class="pill">10K+ installs</span><a class="app-link" href="https://drive.google.com/drive/folders/10EugFBnXeuebbAzE-mBleEuNYHhhppvW?usp=drive_link" target="_blank" rel="noopener">Screenshots <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </article>
+
+    </div>
+    <p class="empty" id="empty" hidden>No apps in that category yet. Pick another filter.</p>
+  </div>
+</section>
+
+<!-- ─────────── WRITING ─────────── -->
+<section class="sec" id="writing">
+  <div class="wrap">
+    <div class="head head-row">
+      <div>
+        <p class="tag">05 — Writing</p>
+        <h2>Tutorials I've published</h2>
+      </div>
+      <a class="head-link" href="https://dev.to/ahsanahmed03" target="_blank" rel="noopener">All posts <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="posts">
+      <a class="post" href="https://medium.com/@aahsanaahmed26/detecting-incoming-calls-and-displaying-phone-number-in-android-studio-using-java-step-by-step-41a425417654" target="_blank" rel="noopener">
+        <p class="post-meta">Medium · 1.98K reads</p>
+        <h3>Detecting incoming calls and displaying the phone number in Android Studio</h3>
+        <p class="post-sum">Reading call state in Java, handling the permissions properly, and showing the caller's number.</p>
+        <span class="post-go">Read <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+
+      <a class="post" href="https://medium.com/p/3695eb8446a9" target="_blank" rel="noopener">
+        <p class="post-meta">Medium · 1.1K reads</p>
+        <h3>Building a QR code and barcode scanner app in Android Studio</h3>
+        <p class="post-sum">A working scanner in Java, from camera permission through to decoding and handling the result.</p>
+        <span class="post-go">Read <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+
+      <a class="post" href="https://dev.to/ahsanahmed03/bottom-navigation-view-with-nav-component-in-android-using-kotlin-step-by-step-tutorial-1kp4" target="_blank" rel="noopener">
+        <p class="post-meta">DEV · 199 reads</p>
+        <h3>Bottom Navigation View with Navigation Component in Kotlin</h3>
+        <p class="post-sum">Wiring a bottom bar to a navigation graph so back-stack behaviour stays correct across tabs.</p>
+        <span class="post-go">Read <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── CONTACT ─────────── -->
+<section class="sec sec-contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <p class="tag">06 — Contact</p>
+      <h2>Got an Android project?</h2>
+      <p class="lede">Hiring, contracting, or need someone to take an existing app off your hands — email is the fastest way to reach me.</p>
+
+      <a class="mailto" href="mailto:aahsanaahmed26@gmail.com">
+        <svg aria-hidden="true"><use href="#i-mail"/></svg>
+        <span>aahsanaahmed26@gmail.com</span>
+      </a>
+
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/ahsan-ahmed-39544b246/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/ahsanahmed03" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://dev.to/ahsanahmed03" target="_blank" rel="noopener">DEV</a></li>
+        <li><a href="https://medium.com/@aahsanaahmed26" target="_blank" rel="noopener">Medium</a></li>
+        <li><a href="https://www.instagram.com/ahsanahmed_03/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100083917520174" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>© <span id="yr">2026</span> Ahsan Ahmed — Android App Developer, Islamabad</p>
+    <a href="#home">Back to top</a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
