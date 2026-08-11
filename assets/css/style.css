@@ -327,6 +327,8 @@ html:not(.js) .reveal{opacity:1;transform:none}
   .meter-sub li{flex:1 1 100%}
   .cta .btn{flex:1 1 100%;justify-content:center}
   .foot-in{justify-content:center;text-align:center}
+  .social{justify-content:flex-start}
+  .mailto{font-size:13px;padding:14px 18px;gap:9px;white-space:nowrap}
 }
 @media (max-width:420px){
   .mark-txt b{font-size:15px}
