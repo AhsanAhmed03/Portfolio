@@ -318,6 +318,7 @@ html:not(.js) .reveal{opacity:1;transform:none}
 }
 @media (max-width:760px){
   .menu{display:flex}
+  .bar-act{margin-left:auto}
   .nav{position:fixed;inset:74px 0 auto;flex-direction:column;gap:2px;padding:14px var(--pad) 26px;
     background:var(--bg);border-bottom:1px solid var(--line);
     transform:translateY(-130%);transition:transform .34s var(--ease);margin:0}
