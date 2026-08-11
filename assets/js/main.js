@@ -144,8 +144,9 @@
   var empty = document.getElementById('empty');
   var showMoreBtn = document.getElementById('showMore');
   var PAGE_SIZE = 6;
+  var mobileQuery = window.matchMedia('(max-width:760px)');
   var currentFilter = 'all';
-  var visibleCount = PAGE_SIZE;
+  var visibleCount = mobileQuery.matches ? 4 : PAGE_SIZE;
 
   function matchesFilter(card, f) {
     return f === 'all' ||
@@ -176,7 +177,7 @@
       btn.classList.add('is-on');
 
       currentFilter = btn.getAttribute('data-f');
-      visibleCount = PAGE_SIZE;
+      visibleCount = mobileQuery.matches ? 4 : PAGE_SIZE;
       render();
     });
   });
