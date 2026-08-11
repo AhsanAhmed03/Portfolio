@@ -138,31 +138,57 @@
     }
   }
 
-  /* ---------- app filters ---------- */
+  /* ---------- app filters + pagination ---------- */
   var filterBtns = document.querySelectorAll('.chip-btn');
   var appCards = document.querySelectorAll('#appgrid .app');
   var empty = document.getElementById('empty');
+  var showMoreBtn = document.getElementById('showMore');
+  var PAGE_SIZE = 6;
+  var currentFilter = 'all';
+  var visibleCount = PAGE_SIZE;
+
+  function matchesFilter(card, f) {
+    return f === 'all' ||
+      (f === 'play' && card.getAttribute('data-play') === 'yes') ||
+      card.getAttribute('data-cat') === f;
+  }
+
+  function render() {
+    var matchedCount = 0;
+    Array.prototype.forEach.call(appCards, function (card) {
+      if (matchesFilter(card, currentFilter)) matchedCount++;
+    });
+
+    var shown = 0;
+    Array.prototype.forEach.call(appCards, function (card) {
+      var match = matchesFilter(card, currentFilter);
+      card.hidden = !match || shown >= visibleCount;
+      if (match) shown++;
+    });
+
+    if (empty) empty.hidden = matchedCount !== 0;
+    if (showMoreBtn) showMoreBtn.hidden = matchedCount <= visibleCount;
+  }
 
   Array.prototype.forEach.call(filterBtns, function (btn) {
     btn.addEventListener('click', function () {
-      var f = btn.getAttribute('data-f');
-
       Array.prototype.forEach.call(filterBtns, function (b) { b.classList.remove('is-on'); });
       btn.classList.add('is-on');
 
-      var shown = 0;
-      Array.prototype.forEach.call(appCards, function (card) {
-        var match =
-          f === 'all' ||
-          (f === 'play' && card.getAttribute('data-play') === 'yes') ||
-          card.getAttribute('data-cat') === f;
-        card.hidden = !match;
-        if (match) shown++;
-      });
-
-      if (empty) empty.hidden = shown !== 0;
+      currentFilter = btn.getAttribute('data-f');
+      visibleCount = PAGE_SIZE;
+      render();
     });
   });
+
+  if (showMoreBtn) {
+    showMoreBtn.addEventListener('click', function () {
+      visibleCount += PAGE_SIZE;
+      render();
+    });
+  }
+
+  render();
 
   /* ---------- year ---------- */
   var yr = document.getElementById('yr');

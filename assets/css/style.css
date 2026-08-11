@@ -158,7 +158,8 @@ svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-l
 
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:15px;
-  padding:15px 27px;border-radius:99px;transition:transform .18s var(--ease),background .2s,box-shadow .2s}
+  padding:15px 27px;border-radius:99px;transition:transform .18s var(--ease),background .2s,box-shadow .2s;
+  font-family:inherit;background:none;border:none;cursor:pointer;-webkit-appearance:none;appearance:none}
 .btn:active{transform:scale(.97)}
 .btn-fill{background:var(--pri);color:var(--on-pri);box-shadow:var(--e1)}
 .btn-fill:hover{box-shadow:var(--e2)}
@@ -259,6 +260,8 @@ svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-l
 .app-link svg{width:15px;height:15px;transition:transform .22s var(--ease)}
 .app-link:hover svg{transform:translateX(4px)}
 .empty{margin-top:28px;color:var(--text3);font-family:var(--f-mono);font-size:13px}
+.apps-more{display:flex;justify-content:center;margin-top:28px}
+.apps-more .btn[hidden]{display:none}
 
 /* writing */
 .posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(292px,1fr));gap:16px}
