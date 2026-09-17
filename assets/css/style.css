@@ -9,7 +9,7 @@
   --f-body:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
 
-  --r-xs:10px; --r-s:16px; --r-m:22px; --r-l:30px; --r-xl:40px;
+  --r-xs:9px; --r-s:14px; --r-m:18px; --r-l:24px; --r-xl:32px;
 
   --w:1180px;
   --pad:clamp(20px,5vw,40px);
@@ -28,7 +28,7 @@
   --surf3:#232636;
   --text:#E9E8F3;
   --text2:#A6A4BD;
-  --text3:#7C7A93;
+  --text3:#8B89A3;
   --line:#2E3145;
   --line2:#3C4058;
   --pri:#B4ABFF;
@@ -49,7 +49,7 @@
   --surf3:#E3E1F1;
   --text:#141420;
   --text2:#54526B;
-  --text3:#75738C;
+  --text3:#5B5876;
   --line:#DBD9EA;
   --line2:#C7C4DB;
   --pri:#3B2ADF;
@@ -170,7 +170,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-l
 
 .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
 .stack li{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.04em;color:var(--text2);
-  padding:7px 13px;border:1px dashed var(--line2);border-radius:99px}
+  padding:7px 13px;border:1px solid var(--line);border-radius:99px;background:var(--surf)}
 
 /* ==========================  sections  ========================== */
 .sec{padding-block:var(--gap-sec)}

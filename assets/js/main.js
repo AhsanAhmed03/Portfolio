@@ -40,18 +40,34 @@
   /* ---------- mobile nav ---------- */
   var menu = document.getElementById('menu');
   var nav = document.getElementById('nav');
+  var navQuery = window.matchMedia('(max-width:760px)');
+
+  function syncNavInert() {
+    if (navQuery.matches && !nav.classList.contains('open')) {
+      nav.setAttribute('inert', '');
+    } else {
+      nav.removeAttribute('inert');
+    }
+  }
 
   function closeNav() {
     nav.classList.remove('open');
     menu.setAttribute('aria-expanded', 'false');
     menu.setAttribute('aria-label', 'Open menu');
+    syncNavInert();
   }
 
   menu.addEventListener('click', function () {
     var open = nav.classList.toggle('open');
     menu.setAttribute('aria-expanded', String(open));
     menu.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    syncNavInert();
   });
+
+  if (navQuery.addEventListener) {
+    navQuery.addEventListener('change', syncNavInert);
+  }
+  syncNavInert();
 
   nav.addEventListener('click', function (e) {
     if (e.target.tagName === 'A') closeNav();
@@ -173,13 +189,26 @@
 
   Array.prototype.forEach.call(filterBtns, function (btn) {
     btn.addEventListener('click', function () {
-      Array.prototype.forEach.call(filterBtns, function (b) { b.classList.remove('is-on'); });
+      Array.prototype.forEach.call(filterBtns, function (b) {
+        b.classList.remove('is-on');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('is-on');
+      btn.setAttribute('aria-pressed', 'true');
 
       currentFilter = btn.getAttribute('data-f');
       visibleCount = mobileQuery.matches ? 4 : PAGE_SIZE;
       render();
     });
+  });
+
+  /* ---------- distinct link names for assistive tech ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll('#appgrid .app'), function (card) {
+    var name = card.querySelector('h3');
+    var link = card.querySelector('.app-link');
+    if (!name || !link) return;
+    var onPlay = link.href.indexOf('play.google.com') !== -1;
+    link.setAttribute('aria-label', name.textContent + (onPlay ? ' on Google Play' : ' — app details'));
   });
 
   if (showMoreBtn) {
