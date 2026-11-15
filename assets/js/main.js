@@ -7,36 +7,6 @@
 
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- theme ---------- */
-  var themeBtn = document.getElementById('theme');
-
-  function store(key, val) {
-    try { localStorage.setItem(key, val); } catch (e) { /* private mode — ignore */ }
-  }
-  function read(key) {
-    try { return localStorage.getItem(key); } catch (e) { return null; }
-  }
-
-  var saved = read('theme');
-  if (saved === 'light' || saved === 'dark') {
-    root.setAttribute('data-theme', saved);
-  } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-    root.setAttribute('data-theme', 'light');
-  }
-
-  function syncThemeLabel() {
-    var now = root.getAttribute('data-theme');
-    themeBtn.setAttribute('aria-label', now === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-  }
-  syncThemeLabel();
-
-  themeBtn.addEventListener('click', function () {
-    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    store('theme', next);
-    syncThemeLabel();
-  });
-
   /* ---------- mobile nav ---------- */
   var menu = document.getElementById('menu');
   var nav = document.getElementById('nav');

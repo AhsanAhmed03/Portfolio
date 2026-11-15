@@ -1,6 +1,27 @@
+# OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Claude Code (local config, never publish)
+.claude/
+CLAUDE.md
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Logs and temp
 *.log
 *.stackdump
-.claude/settings.local.json
+*.tmp
+
+# Secrets
+.env
+.env.*
+
+# Dependencies and build output
 node_modules/
+dist/
+build/
